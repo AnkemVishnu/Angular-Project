@@ -1,0 +1,7 @@
+<ng-snotify></ng-snotify>
+<div id="loader" style="z-index: 100000;position : fixed;visibility: hidden;"></div>
+<app-sidebar *ngIf="login"></app-sidebar>
+<div id="main" style="margin-left:250px">
+    <app-header *ngIf="login"></app-header>
+    <router-outlet></router-outlet>
+</div>
